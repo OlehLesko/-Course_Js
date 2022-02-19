@@ -1,0 +1,45 @@
+.div_rectangle {
+  position: relative;
+  top: 28%;
+  left: 30%;
+
+  border-style: outset;
+  border-color: blue;
+  border-width: 5px;
+  width: 700px;
+  height: 230px;
+  font-family: Arial;
+}
+
+.dear_user {
+  position: relative;
+  top: 4%;
+  left: 40%;
+  color: black;
+}
+
+.count_seconds {
+  position: relative;
+  top: 4%;
+  left: 40%;
+  color: black;
+}
+
+.btn-group button {
+  position: relative;
+  width: 8%;
+  background-color: black;
+  border: 3px solid black;
+  font-size: medium;
+  left: 32%;
+  margin: 1%;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: center;
+}
+
+.btn-group button:hover {
+  color: black;
+  background-color: white;
+}
