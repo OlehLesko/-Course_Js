@@ -118,14 +118,53 @@
 // find_right_triangle();
 
 // Task 7 
-// const currentDate = new Date('August 19, 1975 :01:00');
-// const currentHours = currentDate.getHours();
-// const currentMinutes = currentDate.getMinutes();
-// console.log(currentDate)
-// console.log(currentHours)
-// console.log(currentMinutes)
-// if (currentHours < 5 || currentHours > 22) {
-//     console.log("Good night !");
-// } else if (currentHours < ) {
-//     console.log("Good morning !");
+// const day = new Date(); // Тестова дата December 17, 1995 23:59:00
+// const hr = day.getHours();
+
+// 1 варіант
+// if(hr == 23 || hr == 0 || hr == 1 || hr == 2 || hr == 3 || hr == 4){
+//     console.log("Good night");
+// } else if (hr == 5 || hr == 6 || hr == 7 || hr == 8 || hr == 9 || hr == 10){
+//     console.log("Good morning");
+// } else if(hr == 11 || hr == 12 || hr == 13 || hr == 14 || hr == 15 || hr == 16){
+//     console.log("Good afternoon");
+// } else if(hr == 17 || hr == 18 || hr == 19 || hr == 20 || hr == 21 || hr == 22){
+//     console.log("Good evening");
 // }
+
+
+// 2 варіант
+// switch (hr) {
+//     case 23:
+//     case 0 :
+//     case 1 :
+//     case 2 :
+//     case 3 :
+//     case 4 :
+//         console.log("Good night");
+//         break;
+//     case 5:
+//     case 6:
+//     case 7:
+//     case 8:
+//     case 9:
+//     case 10:
+//         console.log("Good morning");
+//         break;
+//     case 11:
+//     case 12:
+//     case 13:
+//     case 14:
+//     case 15:
+//     case 16:     
+//         console.log("Good afternoon");
+//         break;
+//     case 17:
+//     case 18:
+//     case 19:
+//     case 20:
+//     case 21:
+//     case 22:  
+//         console.log("Good evening");
+//         break;
+// };
