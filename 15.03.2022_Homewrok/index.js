@@ -38,6 +38,8 @@
 
 
 // Task 3
+// Варіант А
+
 // class MonthException {
 //     constructor(message) {
 //         this.name = 'MonthException';
@@ -68,6 +70,35 @@
 
 // const class23 = new MonthException('Incorrect month number');
 // class23.showMonthName(); // Напишіть номер місяця
+
+// Варіант Б
+function MonthException(message, month) {
+        this.name = 'MonthException';
+        this.message = message;   
+
+        function showMonthName(month) {       
+                try {
+                    const months = ["January","February","March","April","May","June","July",
+                    "August","September","October","November","December"];
+        
+                    const find_months = months.find(
+                            (el, idx) => typeof el === "string" && idx === month-1);
+        
+                    if(find_months == undefined){
+                        throw new Error(this.message);
+                    } else { 
+                        console.log(find_months);
+                    }
+        
+                } catch (error) {
+                    console.log(this.name + ' ' + this.message);
+                }
+        }
+        showMonthName(month);   
+        
+}
+
+MonthException('Incorrect month number', 10);  // Напишіть номер місяця
 
 
 // Task 4
