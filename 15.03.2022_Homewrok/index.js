@@ -71,40 +71,40 @@
 
 
 // Task 4
-function showUser(id) {
-    try {
-        if(typeof(id) == 'number') {
-            if(id > 0){
-            const new_object = new Object({id: id});
-            console.log(new_object);
-            } else {
-                throw new Error(`ID is negative: ${id}`); 
-            }     
-        }
-        else if(typeof(id) =='object') {
-            const new_arr = [];
+// function showUser(id) {
+//     try {
+//         if(typeof(id) == 'number') {
+//             if(id > 0){
+//             const new_object = new Object({id: id});
+//             console.log(new_object);
+//             } else {
+//                 throw new Error(`ID is negative: ${id}`); 
+//             }     
+//         }
+//         else if(typeof(id) =='object') {
+//             const new_arr = [];
             
-            for(let i = 0; i != id.length; i++) {
-                if(id[i] > 0){
-                    new_arr.push({id: id[i]});
-                } else if(id[i] < 0){
-                    console.log(`Error: ID must not be negative: ${id[i]}`)
-                }
-            }
-            console.log(new_arr);
-        } 
-    } catch (error) {
-        console.log(error);
-    };
+//             for(let i = 0; i != id.length; i++) {
+//                 if(id[i] > 0){
+//                     new_arr.push({id: id[i]});
+//                 } else if(id[i] < 0){
+//                     console.log(`Error: ID must not be negative: ${id[i]}`)
+//                 }
+//             }
+//             console.log(new_arr);
+//         } 
+//     } catch (error) {
+//         console.log(error);
+//     };
 
-}
-
-
-// showUser(1)
+// }
 
 
-function showUsers(ids) {
-    showUser(ids); 
+// // showUser(1)
 
-};
-showUsers([7, -12, 44, 22])
+
+// function showUsers(ids) {
+//     showUser(ids); 
+
+// };
+// showUsers([7, -12, 44, 22])
