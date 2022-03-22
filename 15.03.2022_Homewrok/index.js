@@ -71,36 +71,40 @@
 
 
 // Task 4
-// const new_object = {};
+function showUser(id) {
+    try {
+        if(typeof(id) == 'number') {
+            if(id > 0){
+            const new_object = new Object({id: id});
+            console.log(new_object);
+            } else {
+                throw new Error(`ID is negative: ${id}`); 
+            }     
+        }
+        else if(typeof(id) =='object') {
+            const new_arr = [];
+            
+            for(let i = 0; i != id.length; i++) {
+                if(id[i] > 0){
+                    new_arr.push({id: id[i]});
+                } else if(id[i] < 0){
+                    console.log(`Error: ID must not be negative: ${id[i]}`)
+                }
+            }
+            console.log(new_arr);
+        } 
+    } catch (error) {
+        console.log(error);
+    };
 
-//console.log(new_object)
-
-// function showUser(id) {
-//     try {
-//         if(id > 0){
-//            const new_object = new Object({id: id});
-//            console.log(new_object);
-//         //    return new_object
-//         } else {
-//             throw new Error(`ID is negative: ${id}`); 
-//         }      
-//     } catch (error) {
-//         console.log(error);
-//     };
-
-// }
+}
 
 
 // showUser(1)
-// // console.log(new_object)
 
 
+function showUsers(ids) {
+    showUser(ids); 
 
-// // function showUsers(ids) {
-// //     console.log(ids.length)
-// //     for(let i = 0; i != ids.length; i++){
-// //         showUser(ids[i]);
-// //     } 
-
-// // };
-// // showUsers([7, -12, 44, 22])
+};
+showUsers([7, -12, 44, 22])
