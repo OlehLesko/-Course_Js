@@ -97,10 +97,20 @@ class Worker {
 
         if(this.#privateField == 1.5) {
             arrSalaries.push(salary);
-            arrNames.push(this.fullName)
-            arrSalaries.sort(function(a,b){ 
+           
+            arrSalaries.sort(function(a, b){ 
                 return a - b
             });
+            
+            arrNames.push(this.fullName)
+
+            const fromIndex = arrNames.indexOf('Tom Tomson'); 
+            const toIndex = 2;
+
+            const element = arrNames.splice(fromIndex, 1)[0];
+
+            arrNames.splice(toIndex, 2, element);   
+            
         };
 
     };   
@@ -124,6 +134,7 @@ worker1.setExp = 1.5;
 console.log("New experience: " + worker1.showExp);
 worker1.showSalaryWithExperience();
 
+console.log('')
 
 let worker2 = new Worker("Tom Tomson", 48, 22);
 console.log(worker2.fullName);
@@ -133,6 +144,7 @@ worker2.showSalaryWithExperience();
 worker2.setExp = 1.5;
 console.log("New experience: " + worker2.showExp);
 worker2.showSalaryWithExperience();
+console.log('')
 
 let worker3 = new Worker("Andy Ander", 29, 23);
 console.log(worker3.fullName);
@@ -142,6 +154,9 @@ worker3.showSalaryWithExperience();
 worker3.setExp = 1.5;
 console.log("New experience: " + worker3.showExp);
 worker3.showSalaryWithExperience();
+
+
+console.log('')
 
 worker3.sort() // Sort
 
@@ -235,6 +250,6 @@ worker3.sort() // Sort
 // handleFigures(figures)
 
 
-// // let obj = {name: 'ol'}
-// // obj.age = 24
-// // console.log(obj)
+// // // let obj = {name: 'ol'}
+// // // obj.age = 24
+// // // console.log(obj)
