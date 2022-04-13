@@ -1,0 +1,22 @@
+.I_am_big_header {
+    background-color: greenyellow;
+}
+
+/* P elements from div id="myDiv" */
+.First_paragraph {
+    /* color: black; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.Second_paragraph {
+    color: red;
+}
+
+.Third_paragraph {
+    text-decoration: underline;
+} 
+
+.Fourth_paragraph {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
