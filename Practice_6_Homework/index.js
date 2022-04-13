@@ -82,5 +82,16 @@
 
 
 // Task 7
-// let main_tag = document.createElement('main.mainClass_check_item');
-// // document.write(main_tag)
+// let main = document.createElement("main");
+// main.className = "mainClass check item";
+
+// const div = document.createElement("div");
+// div.setAttribute("id", "myDiv");
+// main.prepend(div);
+
+// const p = document.createElement("p");
+// p.innerHTML = "First paragraph";
+// div.prepend(p);
+
+
+// console.log(main);
