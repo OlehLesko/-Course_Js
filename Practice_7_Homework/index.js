@@ -1,7 +1,7 @@
 // Task 1 
 // let myWindow = window.open(
-//         "https://softserve.academy", 
-//         "softserve.academy",
+//         "", 
+//         "",
 //         "width=300, height=300")
 
 // console.log(myWindow);
@@ -9,11 +9,11 @@
 // setTimeout(function() {
 //   myWindow.resizeTo(500, 500);
 //   console.log("Window size was change");
-// }, 2000); // Проблема тут 
+// }, 2000);
 
 // setTimeout(function() {
 //   myWindow.resizeBy(200, 200)
-// }, 4000); // Проблема тут 
+// }, 4000);
 
 // setTimeout(function() {
 //   myWindow.close()
