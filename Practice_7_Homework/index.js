@@ -118,15 +118,31 @@
 
 
 // Task 7
-// const USA_city_names = ["Worcester", "Yakima", "Yonkers", "York", "Youngstown"];
-// const GERMANY_city_names = ["Berlin", "Hamburg", "Munich", "Cologne", "Stuttgart", "Dortmund"];
-// const UKRAINE_city_names = ["Kyiv", "Kharkiv", "Odessa", "Dnipro", "Lviv"];
-
-// const countries = document.getElementById("country");
-
-// function user_choosed_country() {
-//     let country_choosed = countries.options[countries.selectedIndex].text;;
-//     console.log(country_choosed);
-// };
+const arr_cities = {
+    "ger": ["Berlin", "Hamburg", "Munich", "Cologne", "Stuttgart", "Dortmund"],
+    "usa": ["Worcester", "Washington", "Yonkers", "New-York", "Youngstown"],
+    "ukr": ["Kyiv", "Kharkiv", "Odessa", "Dnipro", "Lviv"],
+};
 
 
+const parag = document.querySelector('p');
+
+const prime_select = document.getElementById('country');
+const city_select = document.getElementById('cities');
+
+
+function makeList() {
+    city_select.innerHTML = '';
+    let choosed_country = prime_select.value;
+    for(let i = 0; i < arr_cities[choosed_country].length; i++){
+        let create_option = document.createElement('option');
+        create_option.innerHTML = arr_cities[choosed_country][i];
+        city_select.appendChild(create_option);
+    } 
+};
+
+function pargraph() {
+    parag.innerHTML = '';
+    parag.innerHTML = prime_select.options[prime_select.selectedIndex].text + ', '
+    +city_select.options[city_select.selectedIndex].text;
+};
