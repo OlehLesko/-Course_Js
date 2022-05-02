@@ -23,18 +23,24 @@
  
 
 // Task 3 
-// function mul(...args) {
-//     let sum = 0;
-//     for (let i = 0; i != arguments.length; i++) {
-//         if(typeof(arguments[i]) === 'number') {
-//             sum += arguments[i];
-//         }
-//     }
-//     return sum
-// };
+function mul(...args) {
+    let arr_result = [];
+    for (let i = 0; i != args.length; i++) {
+        if(typeof(args[i]) === 'number') {
+            arr_result.push(args[i])
+        }
+    }
 
-// console.log(mul(1, "str", 2, 3, true)); // 6
-// console.log(mul(null, "str", false, true)); // 
+    if(arr_result.length > 0) {
+        const res = arr_result.reduce((acc, rec) => acc * rec);
+        return res
+    } else {
+        return 0
+    }
+};
+
+console.log(mul(1, "str", 2, 3, true)); // 6
+console.log(mul(null, "str", false, true)); // 
 
 
 // Task 4 Don`t correct work now
