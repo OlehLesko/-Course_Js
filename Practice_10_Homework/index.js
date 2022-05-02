@@ -43,7 +43,7 @@
 // console.log(mul(null, "str", false, true)); // 
 
 
-// Task 4 Don`t correct work now
+// Task 4
 // let server = {
 //     data: 0,
 //     convertToString: function (callback) {
@@ -58,9 +58,9 @@
 //        this.server.convertToString(this.notification());
 //     },    
 //     notification: function () {
-//        return (function (callback) {
+//        return (callback => {
 //           this.result = callback();
-//        }).bind(this);
+//        });
 //     }
 //  };
 //  client.calc(123);
